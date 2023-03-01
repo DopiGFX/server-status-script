@@ -26,7 +26,6 @@ export class MinecraftManager {
     })
 
     await retryOperation(async () => {
-      console.log(process.env)
       this.client = await Rcon.connect({
         host: process.env.SERVER, port: Number.parseInt(process.env.PORT), password: process.env.RCONpassword
       })
