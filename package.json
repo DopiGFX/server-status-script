@@ -16,7 +16,7 @@
   "dependencies": {
     "dayjs": "^1.11.7",
     "dotenv": "^16.0.3",
-    "got": "^11.8.6",
+    "got": "^13.0.0",
     "rcon-client": "^4.2.3"
   },
   "devDependencies": {
