@@ -22,7 +22,7 @@ export class DiscordManager {
       embeds: [
         {
           title: "Server offline!",
-          description: "Der Server wurde gestoppt oder ist gecrashed!",
+          description: "Server was stopped or has crashed!",
           color: 16711680
         }
       ],
@@ -33,7 +33,7 @@ export class DiscordManager {
       embeds: [
         {
           title: "Server online!",
-          description: "Der Server ist gestartet!",
+          description: "Server is online!",
           color: 4718336
         }
       ],
@@ -44,7 +44,7 @@ export class DiscordManager {
       embeds: [
         {
           title: "Server crashed!",
-          description: "Der Server hat die Verbindung abgelehnt!",
+          description: "Server has refused the connection!",
           color: 16711680
         }
       ],
@@ -55,7 +55,7 @@ export class DiscordManager {
   constructor() { }
 
   public async send(type: BodyType): Promise<void> {
-    const apiUrl = "https://discord.com/api/webhooks/" + process.env.dcCannelId + "/" + process.env.dcWebghookToken;
+    const apiUrl = process.env.dcWebhookUrl;
     let body = this.typeToBody.get(type);
     body.embeds.map(e => e.timestamp = dayjs().toISOString())
     await got.post(apiUrl, {
