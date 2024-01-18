@@ -14,7 +14,7 @@
   "author": "DopiGFX",
   "license": "MIT",
   "dependencies": {
-    "dayjs": "^1.11.7",
+    "dayjs": "^1.11.9",
     "dotenv": "^16.0.3",
     "got": "^11.8.6",
     "rcon-client": "^4.2.3"
