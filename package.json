@@ -20,7 +20,7 @@
     "rcon-client": "^4.2.3"
   },
   "devDependencies": {
-    "@types/node": "^20.5.7",
+    "@types/node": "^20.11.20",
     "nodemon": "^3.0.3",
     "typescript": "^5.2.2"
   }
